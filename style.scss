@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 840px;
   padding: 0 10px;
   width: 100%;
 }
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0.8em 0 10px;
   padding: 0;
 
   @include mobile {
@@ -45,9 +45,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 24px;
   a {
-    color: inherit;
+    color: $blue;
   }
 }
 
@@ -73,7 +73,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    text-decoration: underline;
   }
 }
 
@@ -193,12 +193,14 @@ img {
 
 .site-name {
   margin: 0;
-  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  a{
+    color: $white;
+  }
 }
 
 .site-description {
@@ -244,9 +246,16 @@ nav {
 //
 // .main
 //
-
+.posts{
+  background-color: $white;
+  padding: 20px;
+  webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    border-radius: 2px;
+    border: 0;
+}
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1.2em;
   border-bottom: 1px solid $lightGray;
 }
 
