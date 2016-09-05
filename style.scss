@@ -18,7 +18,6 @@ html {
 }
 
 body {
-	background: $lightGray;
   font: 16px/1.8 $helvetica;
   color: $darkGray;
 }
@@ -31,7 +30,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $helvetica;
   color: $darkerGray;
   font-weight: bold;
 
@@ -46,8 +45,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 24px;
-  a {
-    color: $blue;
+  a{
+    color: #555;
+    font-weight: 400;
   }
 }
 
@@ -246,14 +246,6 @@ nav {
 //
 // .main
 //
-.posts{
-  background-color: $white;
-  padding: 20px;
-  webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
-    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
-    border-radius: 2px;
-    border: 0;
-}
 .posts > .post {
   padding-bottom: 1.2em;
   border-bottom: 1px solid $lightGray;
