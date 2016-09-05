@@ -1,6 +1,6 @@
 {% if site.disqus %}
 <div class="comments">
-	<div id="disqus_thread"></div>
+	<div class="ds-thread" data-thread-key="{{ page.id }}"  data-title="{{ page.title }} | {{ site.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
 	<script type="text/javascript">
 
 	    var disqus_shortname = '{{ site.disqus }}';
